@@ -1,0 +1,45 @@
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+body {
+    font: 16px/26px 'Open Sans', sans-serif;
+}
+
+i {
+    font-style: normal;
+}
+
+a{
+   color: transparent;
+}
+a:link{
+   color: transparent;
+}
+a:hover{
+   color: transparent;
+}
+a:active{
+}
+
+
+.wrapper {
+    width: 100%;
+    margin: 0;
+}
+
+.white {
+    color: white;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0.83em 0;
+}
