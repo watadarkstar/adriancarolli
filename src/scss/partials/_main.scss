@@ -1,3 +1,23 @@
 .main {
-
+	.skills {
+	}
+	.bio {
+		font-weight: 400;
+		p {
+			margin: 0;
+		}
+		h3 {
+			line-height: 0;
+		}
+		.pic {
+			width: 260px;
+			height: 260px;
+			margin-right: 20px;
+			background-position: center;
+			background-size: cover;
+			background-image: url(https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xfa1/t31.0-8/286421_10150364317550120_7692876_o.jpg);
+			display: inline-block;
+		}
+	}
 }
+

@@ -1,3 +1,21 @@
+
+
+$(function () {
+  var waypoint = new Waypoint({
+    element: document.getElementById('chart-waypoint'),
+    handler: function(direction) {
+        $('.chart').easyPieChart({
+          barColor: '#feb312',
+          scaleColor: false,
+          lineWidth: 5
+        });
+    },
+    offset: 'bottom-in-view',
+    triggerOnce: true,
+  });
+
+});
+
 /* DESKTOP */
 
 function pJS_desktop(){

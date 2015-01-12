@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- add to this site: http://onsite.io/freelancer -->
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -10,6 +11,7 @@
         <meta name="description" content="Adrian Carolli">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png" />
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="assets/css/style.min.css">
 
@@ -22,59 +24,252 @@
 
         <div class="header-container">
             <div id="particles-js"></div>
-            <header class="clearfix">
-                <h1 class="title white">I'm Adrian Carolli</h1>
-                <h2 class="title white">Beautifully crafting web and mobile experiences</h2>
+            <header class="clearfix wrapper">
+                <div class="box">
+                    <h1 class="title white">I'm Adrian Carolli</h1>
+                    <h2 class="title white"></h2>
+                </div>
                 <div class="icons">
                     <a href="https://github.com/watadarkstar"><i class="icon-github-circled"></i></a>
                     <a href="#"><i class="icon-linkedin-circled"></i></a>
                     <a href="https://twitter.com/icookandcode"><i class="icon-twitter-circled"></i></a>
                 </div>
+                <div class="arrow">
+                    <i class="icon-down-open-big"></i>
+                </div>
             </header>
-            <div class="arrow">
-                <i class="icon-down-open-big"></i>
-            </div>
         </div>
 
         <div class="main-container">
-            <section class="main wrapper clearfix">
+            <section class="main">
                 <article>
-                    <header>
-                        <h1>article header h1</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
-                    </header>
-                    <section>
-                        <h2>article section h2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
+                    <section class="wrapper bio">
+                        <h2 class="title center"><span class="center">A bit about me</span></h2>
+                        <div class="row">
+                            <article class="col-md-3">
+                                <span class="pic"></span>
+                            </article><article class="col-md-4">
+                                <ul class="stack">
+                                    <li> Name: Adrian Carolli</li>
+                                    <li> Looking For: 4 Month Internship (Summer 2015)</li>
+                                    <li> Looking For: Full-Time Offer (Dec. 2015)
+                                    <li> Experience: 5+ Years of Web and Mobile Development</li>
+                                    <li> Anticipated Graduation Date: Dec. 2015</li>
+                                    <li> I <i class="entypo icon-heart"></i> coding, learning, users, problems, startups, cooking</li>
+                                </ul>
+                            </article><article class="col-md-5"><!-- whitespace causes issue on inline-block so no line break -->
+                                <h3>The Short Story</h3>
+                                <p>I have 5+ years of web and mobile development experience. I built my first website at the age of 7 playing a game called Neopets. Since, I have worked at startups, but also medium and large sized companies. Later, I co-founded a startup in 2013 called SparkGig out of an accelerator called Velocity. On my free time I enjoy food blogging, cooking and working on open source projects.<br/><br/>
+                                <i>"To the user the interface is the product."</i><br/><span class="right">- Aza Raskin</span></p>
+                            </article>
+                        </div>
                     </section>
-                    <section>
-                        <h2>article section h2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
+                    <section class="wrapper skills">
+                        <h2 class="title center"><span class="center">My Skills </span></h2>
+                        <div class="row" id="chart-waypoint">
+                            <div class="chart col-md-2" data-percent="90">
+                                <div class="percentage"><span>90</span>%<i class="entypo icon-eye"></i></div>
+                                <div class="label">Front-End</div>
+                            </div>
+                            <div class="chart col-md-2" data-percent="80">
+                                <div class="percentage"><span>80</span>%<i class="entypo icon-rocket"></i></div>
+                                <div class="label">Startups</div>
+                            </div>
+                            <div class="chart col-md-2" data-percent="70">
+                                <div class="percentage"><span>70</span>%<i class="entypo icon-cog"></i></div>
+                                <div class="label">Back-End</div>
+                            </div>
+                            <div class="chart col-md-2" data-percent="60">
+                                <div class="percentage"><span>60</span>%<i class="entypo icon-leaf"></i></div>
+                                <div class="label">Cooking</div>
+                            </div>
+                            <div class="chart col-md-2" data-percent="50">
+                                <div class="percentage"><span>50</span>%<i class="entypo icon-mobile"></i></div>
+                                <div class="label">Mobile</div>
+                            </div>
+                            <div class="chart col-md-2" data-percent="40">
+                                <div class="percentage"><span>40</span>%<i class="entypo icon-moon"></i></div>
+                                <div class="label">Sleep</div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <article class="col-md-6">
+                                <h3 class="title">Web Knowledge</span></h3>
+                                <div class="bars">
+                                    <p>HTML5 / CSS</p>
+                                    <div class="bar"><div style="width: 90%;"></div></div>
+                                    <p>jQuery</p>
+                                    <div class="bar"><div style="width: 80%;"></div></div>
+                                    <p>JavaScript</p>
+                                    <div class="bar"><div style="width: 70%;"></div></div>
+                                    <p>Angular</p>
+                                    <div class="bar"><div style="width: 60%;"></div></div>
+                                    <p>RoR</p>
+                                    <div class="bar"><div style="width: 50%;"></div></div>
+                                    <p>Node.js</p>
+                                    <div class="bar"><div style="width: 50%;"></div></div>
+                                </div>
+                            </article><article class="col-md-6"><!-- whitespace causes issue on inline-block so no line break -->
+                                <h3 class="title"><span>Mobile Knowledge</span></h3>
+                                <div class="bars">
+                                    <p>Java</p>
+                                    <div class="bar"><div style="width: 90%;"></div></div>
+                                    <p>Responsive Design</p>
+                                    <div class="bar"><div style="width: 80%;"></div></div>
+                                    <p>Android</p>
+                                    <div class="bar"><div style="width: 70%;"></div></div>
+                                    <p>Mobile Design</p>
+                                    <div class="bar"><div style="width: 60%;"></div></div>
+                                    <p>Tools</p>
+                                    <div class="bar"><div style="width: 60%;"></div></div>
+                                    <p>iOS</p>
+                                    <div class="bar"><div style="width: 50%;"></div></div>
+                                </div>
+                            </article>
+                        </div>
                     </section>
-                    <footer>
-                        <h3>article footer h3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
-                    </footer>
+                    <section class="wrapper">
+                        <h2 class="title center"><span>Portfolio</span></h2>
+                    </section>
+                    <section class="wrapper">
+                        <h2 class="title center"><span>Open Source</span></h2>
+                        <ul class="blocks row">
+                            <li class="block white col-md-6 ">
+                                <br/>
+                                <h3>RaphaelJS SVG Animation jQuery Plugin</h3>
+                                <small>July 2013</small>
+                                <p>
+                                    <ul class="bullets">
+                                        <li> A jQuery Animation Plugin written in CoffeeScript to help designers use SVG animation frames as JavaScript objects for RaphealJS.</li>
+                                        <li>I wrote this code to learn how to create jQuery plugins under a testing framework</li>
+                                        <li><b>Key technologies used:</b> RaphaelJS, jQuery, CoffeeScript, Grunt, Travis CI, Node.js, MiniBoilerplate</li>
+                                    </ul>
+                                </p>
+                            </li>
+                            <li class="block white col-md-6" style="background-image: url(assets/img/raphael.jpg); ">
+                            <li class="block lighter col-md-6 " style="background-image: url(assets/img/plangular.png); background-size: auto; ">
+                            <li class="block white col-md-6 ">
+                                <br/><br/><br/>
+                                <h3>Plangular - Custom SoundCloud players</h3>
+                                <small>Nov 2014</small>
+                                <p>
+                                    <ul class="bullets">
+                                        <li> Fixed unresponsive player on page change</li>
+                                        <li><b>Key technologies used:</b> Angular, JavaScript, Git, Github</li>
+                                    </ul>
+                                </p>
+                            </li>
+                            <li class="block white col-md-6 ">
+                                <br/><br/><br/>
+                                <h3>MailChecker - Cross-language email validation</h3>
+                                <small>Dec 2013</small>
+                                <p>
+                                    <ul class="bullets">
+                                        <li>Added spam domains and re-configured library</li>
+                                        <li><b>Key technologies used:</b> JSON, PHP, Git, Github, Npm</li>
+                                    </ul>
+                                </p>
+                            </li>
+                            <li class="block lighter col-md-6 " style="background-image: url(assets/img/mailchecker.png); background-size: auto; ">
+                            <li class="block lighter col-md-6 " style="background-image: url(assets/img/fsevents.png); background-size: auto; ">
+                            <li class="block white col-md-6 ">
+                                <br/><br/><br/>
+                                <h3>Native Access to Mac OS-X FSEvents</h3>
+                                <small>May 2014</small>
+                                <p>
+                                    <ul class="bullets">
+                                        <li> Fixed undefined constants on Mac OS 10.6.8</li>
+                                        <li><b>Key technologies used:</b> C++, Git, Github, Npm</li>
+                                    </ul>
+                                </p>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="wrapper">
+                        <h2 class="title center"><span>Experience</span></h2>
+                        <ul class="blocks row">
+                            <li class="col-md-6 block lighter">
+                                <br/>
+                                <h3>Co-Founder, SparkGig</h3>
+                                <small>September 2013 - present (1.4 years)</small>
+                                <p>
+                                    <ul class="bullets">
+                                        <li>$25,000 Winner of VeloCity Fund Finals (VFF) - Winter 2014</li>
+                                        <li><b>Main role:</b> Coding, Managing, Product Development, Technical Recruiting</li>
+                                        <li><b>Key technologies used:</b> MongoDB, Express, AngularJS, Node.js, JavaScript, HTML5, CSS and jQuery</li>
+                                    </ul>
+                                </p>
+                            </li>
+                            <li class="col-md-6 block white" style="background-image: url(assets/img/sparkgiglogo.png); ">
+                                
+                            </li>
+                            <li class="col-md-6 block white" style="background-image: url(assets/img/oandalogo.png);">
+                                
+                            </li>
+                            <li class="col-md-6 block lighter">
+                                <br/>
+                                <h3>Web Application Developer, Oanda</h3>
+                                <small>January 2014 – April 2014 (4 months)</small>
+                                <p>
+                                    <ul class="bullets">
+                                        <li>Recognized in company newsletter for hard work and results</li>
+                                        <li>Led the development of a re-design for Exchange Rates for Business</li>
+                                        <li>Co-led the development of a site wide re-design for Oanda.com and Fxtrade sites</li>
+                                        <li><b>Key technologies used:</b> WPML, JavaScript, HTML5, CSS3, and jQuery</li>
+                                    </ul>
+                                </p>
+                            </li>
+                            <li class="col-md-6 block lighter">
+                                <br/>
+                                <h3>Agile Engineer, Pivotal Labs / Xtreme Labs</h3>
+                                <small>April 2013 – August 2013, September 2012 – December 2012  (9 months)</small>
+                                <p>
+                                    <ul class="bullets">
+                                        <li>Worked on iOS and Web based projects</li>
+                                        <li>Built internal tools used to plan, develop, manage and measure software products</li>
+                                        <li>Exposure to pair programming and agile development</li>
+                                        <li><b>Key technologies used:</b> Objective-C, RoR, RSpec, HTML5, CSS, jQuery and Ember.js</li>
+                                    </ul>
+                                </p>
+                            </li>
+                            <li class="col-md-6 block white" style="background-image: url(assets/img/pivotallogo.png); background-size: auto;">
+                                
+                            </li>
+                            <li class="col-md-6 block white" style="background-image: url(assets/img/visiblilogo.png); background-size: auto;">
+                                
+                            </li>
+                            <li class="col-md-6 block lighter">
+                                <h3>Web Developer & UI Designer, Visibli / Keyhole</h3>
+                                <small>January 2012 – April 2012, May 2011 – September 2011 (8 months)</small>
+                                <p>
+                                    <ul class="bullets">
+                                        <li>Developed parts of the back-end and front-end of a new twitter analytics service for paying customers - Featured on The Next Web</li>
+                                        <li>Wrote a text analysis algorithm that saved MTV thousands of dollars</li>
+                                        <li><b>Key technologies used:</b> CakePHP (MVC), MySQL, C#, Silverlight, WPF, jQuery, HTML, CSS, WordPress and the Seesmic Development Kit</li>
+                                        <li><b>Key APIs used:</b> Google Charts API, Twitter API, Facebook API, Bitly API, Google URL Shortener API, Lockerz API, is.gd API, and TwitPic API</b>
+                                    </ul>
+                                </p>
+                            </li>
+                        </ul>
+                    </section>
                 </article>
-
-                <aside>
-                    <h3>aside</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
-                </aside>
-
             </section> <!-- #main -->
         </div> <!-- #main-container -->
 
         <div class="footer-container">
             <footer class="wrapper">
-                <h3>footer</h3>
+                <p>&copy; Adrian Carolli</p>
             </footer>
         </div>
 
         <script>window.jQuery || document.write('<script src="assets/components/jquery.js"><\/script>')</script>
 
+        <script src="assets/components/waypoints.js"></script>
+        <script src="assets/components/jquery.easy-pie-chart.js"></script>
         <script src="assets/components/plugins.js"></script>
         <script src="assets/components/particles.min.js"></script>
+        <script src="assets/js/scripts.min.js"></script>
         <script src="assets/js/main.js"></script>
     </body>
 </html>

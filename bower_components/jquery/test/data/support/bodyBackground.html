@@ -17,11 +17,11 @@
 </head>
 <body>
 	<div>
-		<script src="../../jquery.js"></script>
+		<script src="../include_js.php"></script>
 	</div>
 	<script>
 		jQuery(function() {
-			window.parent.iframeCallback( jQuery( "body" ).css( "backgroundColor" ), jQuery.support );
+			window.parent.supportCallback( jQuery( "body" ).css( "backgroundColor" ), jQuery.support );
 		});
 	</script>
 </body>

@@ -11,130 +11,10 @@ In the spirit of open source software development, jQuery always encourages comm
 3. [Tips For Bug Patching](http://docs.jquery.com/Tips_for_jQuery_Bug_Patching)
 
 
-What you need to build your own jQuery
---------------------------------------
-
-In order to build jQuery, you need to have Node.js/npm latest and git 1.7 or later.
-(Earlier versions might work OK, but are not tested.)
-
-Windows users have two options:
-
-1. Install [msysgit](https://code.google.com/p/msysgit/) (Full installer for official Git) and a
-   [binary version of Node.js](http://nodejs.org). Make sure all two packages are installed to the same
-   location (by default, this is C:\Program Files\Git).
-2. Install [Cygwin](http://cygwin.com/) (make sure you install the git and which packages), and
-   a [binary version of Node.js](http://nodejs.org/).
-
-Mac OS users should install Xcode (comes on your Mac OS install DVD, or downloadable from
-[Apple's Xcode site](http://developer.apple.com/technologies/xcode.html)) and
-[Homebrew](http://mxcl.github.com/homebrew/). Once Homebrew is installed, run `brew install git` to install git,
-and `brew install node` to install Node.js.
-
-Linux/BSD users should use their appropriate package managers to install git and Node.js, or build from source
-if you swing that way. Easy-peasy.
-
-
-How to build your own jQuery
-----------------------------
-
-First, clone a copy of the main jQuery git repo by running:
-
-```bash
-git clone git://github.com/jquery/jquery.git
-```
-
-Install the grunt-cli package so that you will have the correct version of grunt available from any project that needs it. This should be done as a global install:
-
-```bash
-npm install -g grunt-cli
-```
-
-Enter the jquery directory and install the Node dependencies, this time *without* specifying a global install:
-
-```bash
-cd jquery && npm install
-```
-
-Make sure you have `grunt` installed by testing:
-
-```bash
-grunt -version
-```
-
-Then, to get a complete, minified (w/ Uglify.js), linted (w/ JSHint) version of jQuery, type the following:
-
-```bash
-grunt
-```
-
-The built version of jQuery will be put in the `dist/` subdirectory, along with the minified copy and associated map file.
-
-
-### Modules
-
-Special builds can be created that exclude subsets of jQuery functionality.
-This allows for smaller custom builds when the builder is certain that those parts of jQuery are not being used.
-For example, an app that only used JSONP for `$.ajax()` and did not need to calculate offsets or positions of elements could exclude the offset and ajax/xhr modules. The current modules that can be excluded are:
-
-- **ajax**: All AJAX functionality: `$.ajax()`, `$.get()`, `$.post()`, `$.ajaxSetup()`, `.load()`, transports, and ajax event shorthands such as `.ajaxStart()`.
-- **ajax/xhr**: The XMLHTTPRequest AJAX transport only.
-- **ajax/script**: The `<script>` AJAX transport only; used to retrieve scripts.
-- **ajax/jsonp**: The JSONP AJAX transport only; depends on the ajax/script transport.
-- **css**: The `.css()` method plus non-animated `.show()`, `.hide()` and `.toggle()`.
-- **deprecated**: Methods documented as deprecated but not yet removed; currently only `.andSelf()`.
-- **dimensions**: The `.width()` and `.height()` methods, including `inner-` and `outer-` variations.
-- **effects**: The `.animate()` method and its shorthands such as `.slideUp()` or `.hide("slow")`. 
-- **event-alias**: All event attaching/triggering shorthands like `.click()` or `.mouseover()`.
-- **offset**: The `.offset()`, `.position()`, `.offsetParent()`, `.scrollLeft()`, and `.scrollTop()` methods.
-- **wrap**: The `.wrap()`, `.wrapAll()`, `.wrapInner()`, and `.unwrap()` methods.
-
-The grunt build process is aware of dependencies across modules. If you explicitly remove a module, its dependent modules will be removed as well. For example, excluding the css module also excludes effects, since the effects module uses `.css()` to animate CSS properties. These dependencies are listed in Gruntfile.js and the build process shows a message for each dependent module it excludes.
-
-To create a custom build of the latest stable version, first check out the version:
-
-```bash
-git pull; git checkout $(git describe --abbrev=0 --tags)
-```
-
-Then, make sure all Node dependencies are installed and all Git submodules are checked out:
-
-```bash
-npm install && grunt
-```
-
-Create the custom build, use the `grunt custom` option, listing the modules to be excluded. Examples:
-
-Exclude all **ajax** functionality:
-
-```bash
-grunt custom:-ajax
-```
-
-Exclude **css**, **effects**, **offset**, **dimensions**, and **position**. Excluding **css** automatically excludes its dependent modules:
-
-```bash
-grunt custom:-css,-position
-```
-
-Exclude **all** optional modules:
-
-```bash
-grunt custom:-ajax,-css,-deprecated,-dimensions,-effects,-event-alias,-offset,-wrap
-```
-
-For questions or requests regarding custom builds, please start a thread on the [Developing jQuery Core](https://forum.jquery.com/developing-jquery-core) section of the forum. Due to the combinatorics and custom nature of these builds, they are not regularly tested in jQuery's unit test process.
-
 Running the Unit Tests
 --------------------------------------
 
-Start grunt to auto-build jQuery as you work:
-
-```bash
-cd jquery && grunt watch
-```
-
-
-Run the unit tests with a local server that supports PHP. Ensure that you run the site from the root directory, not the "test" directory. No database is required. Pre-configured php local servers are available for Windows and Mac. Here are some options:
+Run the unit tests with a local server that supports PHP. No database is required. Pre-configured php local servers are available for Windows and Mac. Here are some options:
 
 - Windows: [WAMP download](http://www.wampserver.com/en/)
 - Mac: [MAMP download](http://www.mamp.info/en/index.html)
@@ -142,119 +22,128 @@ Run the unit tests with a local server that supports PHP. Ensure that you run th
 - [Mongoose (most platforms)](http://code.google.com/p/mongoose/)
 
 
+What you need to build your own jQuery
+--------------------------------------
+
+In order to build jQuery, you need to have GNU make 3.8 or later, Node.js 0.4.12 or later, and git 1.7 or later.
+(Earlier versions might work OK, but are not tested.)
+
+Windows users have two options:
+
+1. Install [msysgit](https://code.google.com/p/msysgit/) (Full installer for official Git),
+   [GNU make for Windows](http://gnuwin32.sourceforge.net/packages/make.htm), and a
+   [binary version of Node.js](http://node-js.prcn.co.cc/). Make sure all three packages are installed to the same
+   location (by default, this is C:\Program Files\Git).
+2. Install [Cygwin](http://cygwin.com/) (make sure you install the git, make, and which packages), then either follow
+   the [Node.js build instructions](https://github.com/ry/node/wiki/Building-node.js-on-Cygwin-%28Windows%29) or install
+   the [binary version of Node.js](http://node-js.prcn.co.cc/).
+
+Mac OS users should install Xcode (comes on your Mac OS install DVD, or downloadable from
+[Apple's Xcode site](http://developer.apple.com/technologies/xcode.html)) and
+[http://mxcl.github.com/homebrew/](Homebrew). Once Homebrew is installed, run `brew install git` to install git,
+and `brew install node` to install Node.js.
+
+Linux/BSD users should use their appropriate package managers to install make, git, and node, or build from source
+if you swing that way. Easy-peasy.
+
+
+How to build your own jQuery
+----------------------------
+
+First, clone a copy of the main jQuery git repo by running `git clone git://github.com/jquery/jquery.git`.
+
+Then, to get a complete, minified, jslinted version of jQuery, simply `cd` to the `jquery` directory and type
+`make`. If you don't have Node installed and/or want to make a basic, uncompressed, unlinted version of jQuery, use
+`make jquery` instead of `make`.
+
+The built version of jQuery will be put in the `dist/` subdirectory.
+
+To remove all built files, run `make clean`.
 
 
 Building to a different directory
 ---------------------------------
 
-To copy the built jQuery files from `/dist` to another directory:
+If you want to build jQuery to a directory that is different from the default location, you can specify the PREFIX
+directory: `make PREFIX=/home/jquery/test/ [command]`
 
-```bash
-grunt && grunt dist:/path/to/special/location/
-```
-With this example, the output files would be:
-
-```bash
-/path/to/special/location/jquery.js
-/path/to/special/location/jquery.min.js
-```
-
-To add a permanent copy destination, create a file in `dist/` called ".destination.json". Inside the file, paste and customize the following:
-
-```json
-
-{
-  "/Absolute/path/to/other/destination": true
-}
-```
-
-Additionally, both methods can be combined.
+With this example, the output files would end up in `/home/jquery/test/dist/`.
 
 
+Troubleshooting
+---------------
 
-Updating Submodules
--------------------
+Sometimes, the various git repositories get into an inconsistent state where builds don't complete properly
+(usually this results in the jquery.js or jquery.min.js being 0 bytes). If this happens, run `make clean`, then
+run `make` again.
 
-Update the submodules to what is probably the latest upstream code.
-
-```bash
-grunt update_submodules
-```
-
-Note: This task will also be run any time the default `grunt` command is used.
-
-
-
-Essential Git
--------------
+Git for dummies
+---------------
 
 As the source code is handled by the version control system Git, it's useful to know some features used.
 
 ### Submodules ###
 
-The repository uses submodules, which normally are handled directly by the `grunt update_submodules` command, but sometimes you want to
+The repository uses submodules, which normally are handled directly by the Makefile, but sometimes you want to
 be able to work with them manually.
 
 Following are the steps to manually get the submodules:
 
-```bash
-git clone https://github.com/jquery/jquery.git
-cd jquery
-git submodule init
-git submodule update
-```
+1. `git clone https://github.com/jquery/jquery.git`
+2. `git submodule init`
+3. `git submodule update`
 
 Or:
 
-```bash
-git clone https://github.com/jquery/jquery.git
-cd jquery
-git submodule update --init
-```
+1. `git clone https://github.com/jquery/jquery.git`
+2. `git submodule update --init`
 
 Or:
 
-```bash
-git clone --recursive https://github.com/jquery/jquery.git
-cd jquery
-```
+1. `git clone --recursive https://github.com/jquery/jquery.git`
 
 If you want to work inside a submodule, it is possible, but first you need to checkout a branch:
 
-```bash
-cd src/sizzle
-git checkout master
-```
+1. `cd src/sizzle`
+2. `git checkout master`
 
 After you've committed your changes to the submodule, you'll update the jquery project to point to the new commit,
 but remember to push the submodule changes before pushing the new jquery commit:
 
-```bash
-cd src/sizzle
-git push origin master
-cd ..
-git add src/sizzle
-git commit
-```
+1. `cd src/sizzle`
+2. `git push origin master`
+3. `cd ..`
+4. `git add src/sizzle`
+5. `git commit`
 
+The makefile has some targets to simplify submodule handling:
+
+#### `make update_submodules` ####
+
+checks out the commit pointed to by jquery, but merges your local changes, if any. This target is executed
+when you are doing a normal `make`.
+
+#### `make pull_submodules` ####
+
+updates the content of the submodules to what is probably the latest upstream code.
+
+#### `make pull` ####
+
+make a `make pull_submodules` and after that a `git pull`. if you have no remote tracking in your master branch, you can
+execute this command as `make pull REMOTE=origin BRANCH=master` instead.
 
 ### cleaning ###
 
 If you want to purge your working directory back to the status of upstream, following commands can be used (remember everything you've worked on is gone after these):
 
-```bash
-git reset --hard upstream/master
-git clean -fdx
-```
+1. `git reset --hard upstream/master`
+2. `git clean -fdx`
 
 ### rebasing ###
 
 For feature/topic branches, you should always used the `--rebase` flag to `git pull`, or if you are usually handling many temporary "to be in a github pull request" branches, run following to automate this:
 
-```bash
-git config branch.autosetuprebase local
-```
-(see `man git-config` for more information)
+* `git config branch.autosetuprebase local` (see `man git-config` for more information)
 
 ### handling merge conflicts ###
 
@@ -271,125 +160,6 @@ Following are some commands that can be used there:
 * `middle mouse button` - mark a line to be the winner
 * `Ctrl + S` - save
 * `Ctrl + Q` - quit
-
-[QUnit](http://docs.jquery.com/QUnit) Reference
------------------
-
-### Test methods ###
-
-```js
-expect( numAssertions );
-stop();
-start();
-```
-
-
-note: QUnit's eventual addition of an argument to stop/start is ignored in this test suite so that start and stop can be passed as callbacks without worrying about their parameters
-
-### Test assertions ###
-
-
-```js
-ok( value, [message] );
-equal( actual, expected, [message] );
-notEqual( actual, expected, [message] );
-deepEqual( actual, expected, [message] );
-notDeepEqual( actual, expected, [message] );
-strictEqual( actual, expected, [message] );
-notStrictEqual( actual, expected, [message] );
-raises( block, [expected], [message] );
-```
-
-
-Test Suite Convenience Methods Reference (See [test/data/testinit.js](https://github.com/jquery/jquery/blob/master/test/data/testinit.js))
-------------------------------
-
-### Returns an array of elements with the given IDs ###
-
-```js
-q( ... );
-```
-
-Example:
-
-```js
-q("main", "foo", "bar");
-
-=> [ div#main, span#foo, input#bar ]
-```
-
-### Asserts that a selection matches the given IDs ###
-
-```js
-t( testName, selector, [ "array", "of", "ids" ] );
-```
-
-Example:
-
-```js
-t("Check for something", "//[a]", ["foo", "baar"]);
-```
-
-
-
-### Fires a native DOM event without going through jQuery ###
-
-```js
-fireNative( node, eventType )
-```
-
-Example:
-
-```js
-fireNative( jQuery("#elem")[0], "click" );
-```
-
-### Add random number to url to stop caching ###
-
-```js
-url( "some/url.php" );
-```
-
-Example:
-
-```js
-url("data/test.html");
-
-=> "data/test.html?10538358428943"
-
-
-url("data/test.php?foo=bar");
-
-=> "data/test.php?foo=bar&10538358345554"
-```
-
-
-### Load tests in an iframe ###
-
-Loads a given page constructing a url with fileName: `"./data/" + fileName + ".html"`
-and fires the given callback on jQuery ready (using the jQuery loading from that page)
-and passes the iFrame's jQuery to the callback.
-
-```js
-testIframe( fileName, testName, callback );
-```
-
-Callback arguments:
-
-```js
-callback( jQueryFromIFrame, iFrameWindow, iFrameDocument );
-```
-
-### Load tests in an iframe (window.iframeCallback) ###
-
-Loads a given page constructing a url with fileName: `"./data/" + fileName + ".html"`
-The given callback is fired when window.iframeCallback is called by the page
-The arguments passed to the callback are the same as the
-arguments passed to window.iframeCallback, whatever that may be
-
-```js
-testIframeWithCallback( testName, fileName, callback );
-```
 
 Questions?
 ----------

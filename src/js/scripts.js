@@ -1,9 +1,9 @@
 (function ($, window, document, undefined) {
 
-  'use strict';
+	'use strict';
 
-  $(function () {
-    // FireShell
-  });
+	$(function () {
+		
+	});
 
 })(jQuery, window, document);
