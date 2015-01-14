@@ -2060,6 +2060,33 @@ h2 {
   margin: 60px 0 0 0;
 }
 
+.gallery-btn {
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+  position: relative;
+}
+
+.gallery-btn:hover {
+  opacity: 0.8;
+}
+
+.gallery-btn .icon-search {
+  font-size: 2.5em;
+  background-color: #f7f7f7;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  margin: auto;
+  margin-top: -30px;
+  top: 50%;
+  left: 0;
+  right: 0;
+  line-height: 0;
+  padding-top: 31px;
+  padding-left: 4px;
+  border-radius: 40px;
+}
+
 ul.stack {
   list-style: none;
   padding: 0;
@@ -2227,6 +2254,23 @@ hr.style-two {
 
   .header-container h2:before {
     content: "Beautifully crafting web and mobile experiences";
+  }
+
+  ul.blocks li.block {
+    display: block;
+    padding: 40px 20px;
+    height: auto;
+    min-height: 400px;
+  }
+
+  .main .bio .pic {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .chart {
+    display: block;
   }
 }
 

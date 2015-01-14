@@ -14,6 +14,18 @@ $(function () {
     triggerOnce: true,
   });
 
+  $('#p1-sparkgig').magnificPopup({
+    items: [
+      {src: 'assets/img/portfolio/sparkgig-work1.png'},
+      {src: 'assets/img/portfolio/sparkgig-work2.png'},
+      {src: 'assets/img/portfolio/sparkgig-work3.png'}
+    ],
+    gallery: {
+      enabled: true
+    },
+    type: 'image'
+  });
+
 });
 
 /* DESKTOP */

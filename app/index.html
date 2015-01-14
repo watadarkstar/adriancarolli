@@ -13,6 +13,7 @@
 
         <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png" />
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="assets/components/magnific-popup.css">
         <link rel="stylesheet" href="assets/css/style.min.css">
 
         <script src="assets/components/modernizr.js"></script>
@@ -30,9 +31,9 @@
                     <h2 class="title white"></h2>
                 </div>
                 <div class="icons">
-                    <a href="https://github.com/watadarkstar"><i class="icon-github-circled"></i></a>
-                    <a href="#"><i class="icon-linkedin-circled"></i></a>
-                    <a href="https://twitter.com/icookandcode"><i class="icon-twitter-circled"></i></a>
+                    <a href="https://github.com/watadarkstar" target="_blank"><i class="icon-github-circled"></i></a>
+                    <a href="https://ca.linkedin.com/in/adriancarolli" target="_blank"><i class="icon-linkedin-circled"></i></a>
+                    <a href="https://twitter.com/icookandcode" target="_blank"><i class="icon-twitter-circled"></i></a>
                 </div>
                 <div class="arrow">
                     <i class="icon-down-open-big"></i>
@@ -66,8 +67,8 @@
                     </section>
                     <section class="wrapper skills">
                         <h2 class="title center"><span class="center">My Skills </span></h2>
-                        <div class="row" id="chart-waypoint">
-                            <div class="chart col-md-2" data-percent="90">
+                        <div class="row">
+                            <div class="chart col-md-2" data-percent="90" id="chart-waypoint">
                                 <div class="percentage"><span>90</span>%<i class="entypo icon-eye"></i></div>
                                 <div class="label">Front-End</div>
                             </div>
@@ -131,6 +132,22 @@
                     </section>
                     <section class="wrapper">
                         <h2 class="title center"><span>Portfolio</span></h2>
+                        <ul class="blocks row">
+                            <li class="block white col-md-6 ">
+                                <h3>SparkGig, User onboarding</h3>
+                                <small>Fall 2014</small>
+                                <p>
+                                    <ul class="bullets">
+                                        <li><b>The questions I addressed:</b> How do we improve the onboarding process?  How do we get users to create high quality profiles? How do we programmatically measure profile quality?</li>
+                                        <li>Extensively researched startups who have effectively answered these questions like Homejoy, Airbnb, Dropbox, Yelp</li>
+                                        <li>Led and implemented the development of various solutions</li>
+                                        <!-- <li><b>The solutions I came up with:</b> Scoring Profile Strength / Completeness, New User Tour, Simple Word Choice</li> -->
+                                        <li><b>Key technologies used:</b> HTML, CSS, Angular, Node.js</li>
+                                    </ul>
+                                </p>
+                            </li>
+                            <li id="p1-sparkgig" class="gallery-btn block white col-md-6" style="background-image: url(assets/img/portfolio/sparkgig-work1.png); background-size: contain; "><i class="entypo icon-search"></i></li>
+                        </ul>
                     </section>
                     <section class="wrapper">
                         <h2 class="title center"><span>Open Source</span></h2>
@@ -147,8 +164,8 @@
                                     </ul>
                                 </p>
                             </li>
-                            <li class="block white col-md-6" style="background-image: url(assets/img/raphael.jpg); ">
-                            <li class="block lighter col-md-6 " style="background-image: url(assets/img/plangular.png); background-size: auto; ">
+                            <li class="block white col-md-6" style="background-image: url(assets/img/raphael.jpg); "></li>
+                            <li class="block lighter col-md-6 " style="background-image: url(assets/img/plangular.png); background-size: auto; "></li>
                             <li class="block white col-md-6 ">
                                 <br/><br/><br/>
                                 <h3>Plangular - Custom SoundCloud players</h3>
@@ -171,8 +188,8 @@
                                     </ul>
                                 </p>
                             </li>
-                            <li class="block lighter col-md-6 " style="background-image: url(assets/img/mailchecker.png); background-size: auto; ">
-                            <li class="block lighter col-md-6 " style="background-image: url(assets/img/fsevents.png); background-size: auto; ">
+                            <li class="block lighter col-md-6 " style="background-image: url(assets/img/mailchecker.png); background-size: auto; "></li>
+                            <li class="block lighter col-md-6 " style="background-image: url(assets/img/fsevents.png); background-size: auto; "></li>
                             <li class="block white col-md-6 ">
                                 <br/><br/><br/>
                                 <h3>Native Access to Mac OS-X FSEvents</h3>
@@ -201,12 +218,8 @@
                                     </ul>
                                 </p>
                             </li>
-                            <li class="col-md-6 block white" style="background-image: url(assets/img/sparkgiglogo.png); ">
-                                
-                            </li>
-                            <li class="col-md-6 block white" style="background-image: url(assets/img/oandalogo.png);">
-                                
-                            </li>
+                            <li class="col-md-6 block white" style="background-image: url(assets/img/sparkgiglogo.png); "></li>
+                            <li class="col-md-6 block white" style="background-image: url(assets/img/oandalogo.png);"></li>
                             <li class="col-md-6 block lighter">
                                 <br/>
                                 <h3>Web Application Developer, Oanda</h3>
@@ -233,12 +246,8 @@
                                     </ul>
                                 </p>
                             </li>
-                            <li class="col-md-6 block white" style="background-image: url(assets/img/pivotallogo.png); background-size: auto;">
-                                
-                            </li>
-                            <li class="col-md-6 block white" style="background-image: url(assets/img/visiblilogo.png); background-size: auto;">
-                                
-                            </li>
+                            <li class="col-md-6 block white" style="background-image: url(assets/img/pivotallogo.png); background-size: auto;"></li>
+                            <li class="col-md-6 block white" style="background-image: url(assets/img/visiblilogo.png); background-size: auto;"></li>
                             <li class="col-md-6 block lighter">
                                 <h3>Web Developer & UI Designer, Visibli / Keyhole</h3>
                                 <small>January 2012 – April 2012, May 2011 – September 2011 (8 months)</small>
@@ -265,6 +274,7 @@
 
         <script>window.jQuery || document.write('<script src="assets/components/jquery.js"><\/script>')</script>
 
+        <script src="assets/components/magnific-popup.js"></script>
         <script src="assets/components/waypoints.js"></script>
         <script src="assets/components/jquery.easy-pie-chart.js"></script>
         <script src="assets/components/plugins.js"></script>

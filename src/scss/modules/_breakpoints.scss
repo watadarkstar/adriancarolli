@@ -16,6 +16,28 @@
 			}
 		}
 	}
+	ul.blocks {
+		li.block {
+			display: block;
+			padding: 40px 20px;
+			height: auto;
+			min-height: 400px;
+		}
+	}
+
+	.main {
+		.bio {
+			.pic {
+				display: block;
+				margin: auto;
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	.chart {
+		display: block;
+	}
 }
 /* Phone */
 @media only screen and (max-width:670px) {

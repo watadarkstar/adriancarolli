@@ -6,6 +6,7 @@
     "jquery": "~1.7.2",
     "normalize-css": "~2.1.3",
     "jquery.easy-pie-chart": "latest",
-    "waypoints": "latest"
+    "waypoints": "latest",
+    "magnific-popup": "latest"
   }
 }
