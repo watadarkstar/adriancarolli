@@ -25,7 +25,7 @@
 
         <div class="header-container">
             <div id="particles-js"></div>
-            <header class="clearfix wrapper">
+            <header class="clearfix wrapper" id="ssection1">
                 <div class="box">
                     <h1 class="title white">I'm Adrian Carolli</h1>
                     <h2 class="title white"></h2>
@@ -35,7 +35,7 @@
                     <a href="https://ca.linkedin.com/in/adriancarolli" target="_blank"><i class="icon-linkedin-circled"></i></a>
                     <a href="https://twitter.com/icookandcode" target="_blank"><i class="icon-twitter-circled"></i></a>
                 </div>
-                <div class="arrow">
+                <div class="arrow" id="chev-header">
                     <i class="icon-down-open-big"></i>
                 </div>
             </header>
@@ -44,7 +44,7 @@
         <div class="main-container">
             <section class="main">
                 <article>
-                    <section class="wrapper bio">
+                    <section class="wrapper bio" id="section2">
                         <h2 class="title center"><span class="center">A bit about me</span></h2>
                         <div class="row">
                             <article class="col-md-3">
@@ -60,8 +60,12 @@
                                 </ul>
                             </article><article class="col-md-5"><!-- whitespace causes issue on inline-block so no line break -->
                                 <h3>The Short Story</h3>
-                                <p>I have 5+ years of web and mobile development experience. I built my first website at the age of 7 playing a game called Neopets. Since, I have worked at startups, but also medium and large sized companies. Later, I co-founded a startup in 2013 called SparkGig out of an accelerator called Velocity. On my free time I enjoy food blogging, cooking and working on open source projects.<br/><br/>
-                                <i>"To the user the interface is the product."</i><br/><span class="right">- Aza Raskin</span></p>
+                                <p>I have 5+ years of web and mobile development experience. I built my first website at the age of 7 playing a game called Neopets. I have since worked at startups, but also medium and large sized companies. Later, I co-founded a startup in 2013 called SparkGig which won $25,000 at the Velocity Fund Finals and various other awards. On my free time I enjoy food blogging, cooking and working on open source projects.
+                                <div class="quote right">
+                                    <i>"To the user the interface is the product."</i><span class="author">- Aza Raskin</span>
+                                </div>
+                                </p>
+
                             </article>
                         </div>
                     </section>
@@ -80,13 +84,13 @@
                                 <div class="percentage"><span>70</span>%<i class="entypo icon-cog"></i></div>
                                 <div class="label">Back-End</div>
                             </div>
+                            <div class="chart col-md-2" data-percent="70">
+                                <div class="percentage"><span>70</span>%<i class="entypo icon-mobile"></i></div>
+                                <div class="label">Mobile</div>
+                            </div>
                             <div class="chart col-md-2" data-percent="60">
                                 <div class="percentage"><span>60</span>%<i class="entypo icon-leaf"></i></div>
                                 <div class="label">Cooking</div>
-                            </div>
-                            <div class="chart col-md-2" data-percent="50">
-                                <div class="percentage"><span>50</span>%<i class="entypo icon-mobile"></i></div>
-                                <div class="label">Mobile</div>
                             </div>
                             <div class="chart col-md-2" data-percent="40">
                                 <div class="percentage"><span>40</span>%<i class="entypo icon-moon"></i></div>
@@ -165,7 +169,18 @@
                                 </p>
                             </li>
                             <li class="block white col-md-6" style="background-image: url(assets/img/raphael.jpg); "></li>
-                            <li class="block lighter col-md-6 " style="background-image: url(assets/img/plangular.png); background-size: auto; "></li>
+                            <li class="block lighter col-md-6 " style="background-image: url(assets/img/mozillalogo.png); background-size: auto; "></li>
+                            <li class="block white col-md-6 ">
+                                <br/><br/><br/>
+                                <h3>Mozilla Firefox</h3>
+                                <small>Jan 2015</small>
+                                <p>
+                                    <ul class="bullets">
+                                        <li> Fixed Bug: Added UITelemetry for search button.</li>
+                                        <li><b>Key technologies used:</b> JavaScript, Git, Github, Mercurial</li>
+                                    </ul>
+                                </p>
+                            </li>
                             <li class="block white col-md-6 ">
                                 <br/><br/><br/>
                                 <h3>Plangular - Custom SoundCloud players</h3>
@@ -177,6 +192,8 @@
                                     </ul>
                                 </p>
                             </li>
+                            <li class="block lighter col-md-6 " style="background-image: url(assets/img/plangular.png); background-size: auto; "></li>
+                            <li class="block lighter col-md-6 " style="background-image: url(assets/img/mailchecker.png); background-size: auto; "></li>
                             <li class="block white col-md-6 ">
                                 <br/><br/><br/>
                                 <h3>MailChecker - Cross-language email validation</h3>
@@ -188,8 +205,6 @@
                                     </ul>
                                 </p>
                             </li>
-                            <li class="block lighter col-md-6 " style="background-image: url(assets/img/mailchecker.png); background-size: auto; "></li>
-                            <li class="block lighter col-md-6 " style="background-image: url(assets/img/fsevents.png); background-size: auto; "></li>
                             <li class="block white col-md-6 ">
                                 <br/><br/><br/>
                                 <h3>Native Access to Mac OS-X FSEvents</h3>
@@ -201,6 +216,7 @@
                                     </ul>
                                 </p>
                             </li>
+                            <li class="block lighter col-md-6 " style="background-image: url(assets/img/fsevents.png); background-size: auto; "></li>
                         </ul>
                     </section>
                     <section class="wrapper">
@@ -247,7 +263,7 @@
                                 </p>
                             </li>
                             <li class="col-md-6 block white" style="background-image: url(assets/img/pivotallogo.png); background-size: auto;"></li>
-                            <li class="col-md-6 block white" style="background-image: url(assets/img/visiblilogo.png); background-size: auto;"></li>
+                            <li class="col-md-6 block white" style="background-image: url(assets/img/keyhole.png); background-size: auto;"></li>
                             <li class="col-md-6 block lighter">
                                 <h3>Web Developer & UI Designer, Visibli / Keyhole</h3>
                                 <small>January 2012 – April 2012, May 2011 – September 2011 (8 months)</small>

@@ -1872,10 +1872,14 @@ h2 {
   text-align: center;
   width: inherit;
   bottom: 20px;
+  cursor: pointer;
 }
 .header-container .arrow i {
   color: white;
   font-size: 2em;
+}
+.header-container .arrow:hover {
+  opacity: 0.8;
 }
 
 .nav ul {
@@ -1899,6 +1903,14 @@ h2 {
   background-size: cover;
   background-image: url(https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xfa1/t31.0-8/286421_10150364317550120_7692876_o.jpg);
   display: inline-block;
+}
+.main .bio .quote {
+  padding-top: 5px;
+  font-size: 0.8em;
+}
+.main .bio .quote .author {
+  position: relative;
+  top: 15px;
 }
 
 .footer-container {

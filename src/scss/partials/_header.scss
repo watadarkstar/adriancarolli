@@ -78,9 +78,13 @@
 	    text-align: center;
 	    width: inherit;
 	    bottom: 20px;
+	    cursor: pointer;
 		i {
 		    color: white;
 		    font-size: 2em;
+		}
+		&:hover {
+		    opacity: 0.8;
 		}
 	}
 }

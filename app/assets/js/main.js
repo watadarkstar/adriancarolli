@@ -26,6 +26,12 @@ $(function () {
     type: 'image'
   });
 
+  $("#chev-header").click(function(e){
+    $('html, body').animate({
+        scrollTop: $("#section2").offset().top
+    }, 500);
+  });
+
 });
 
 /* DESKTOP */
