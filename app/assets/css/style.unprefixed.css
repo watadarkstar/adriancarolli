@@ -1779,7 +1779,7 @@ h2 {
 }
 
 .bars {
-  margin-top: 40px;
+  margin-bottom: 20px;
 }
 .bars .bar {
   background: #e1e1e1;
@@ -1911,6 +1911,46 @@ h2 {
 .main .bio .quote .author {
   position: relative;
   top: 15px;
+}
+.main .contact-section .contact-me {
+  display: inline-block;
+  width: 50%;
+  min-width: 320px;
+  padding: 0 50px;
+}
+.main .contact-section .contact-me h3 {
+  line-height: normal;
+  margin: 0;
+}
+.main .contact-section .contact-me p {
+  margin: 0;
+}
+.main .contact-section .contact-form {
+  margin: auto;
+  margin-bottom: 100px;
+  display: inline-block;
+  width: 50%;
+  min-width: 320px;
+  padding: 0 50px;
+}
+.main .contact-section .contact-form form {
+  width: 100%;
+}
+.main .contact-section .contact-form input, .main .contact-section .contact-form textarea {
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  width: inherit;
+  padding: 5px 10px;
+}
+.main .contact-section .contact-form label {
+  font-size: 0.9em;
+}
+.main .contact-section .contact-form input[type="submit"] {
+  background: white;
+  width: 100px;
+  float: right;
 }
 
 .footer-container {
@@ -2081,7 +2121,7 @@ hr.style-two {
 }
 
 /* Tablet */
-@media only screen and (max-width: 968px) {
+@media only screen and (max-width: 1170px) {
   .wrapper {
     width: 660px;
   }
@@ -2103,15 +2143,27 @@ hr.style-two {
     height: auto;
     min-height: 400px;
   }
+  ul.blocks li.pic {
+    /* TODO - fix these pics on mobile */
+  }
 
   .main .bio .pic {
     display: block;
     margin: auto;
     margin-bottom: 20px;
   }
+  .main .contact-section .contact-me {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .main .contact-section .contact-form {
+    padding: 0;
+    padding-left: 20px;
+  }
 
   .chart {
     display: block;
+    margin-bottom: 20px;
   }
 }
 /* Phone */
@@ -2134,6 +2186,21 @@ hr.style-two {
   }
   .header-container .icons i {
     font-size: 2em;
+  }
+
+  .main h2.title {
+    line-height: 4em;
+  }
+  .main h2.title:before {
+    top: 2em;
+  }
+  .main .contact-section .contact-me {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .main .contact-section .contact-form {
+    padding: 0;
+    margin: 0;
   }
 }
 @media print {

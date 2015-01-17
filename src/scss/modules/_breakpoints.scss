@@ -1,5 +1,5 @@
 /* Tablet */
-@media only screen and (max-width:968px) {
+@media only screen and (max-width:1170px) {
 	.wrapper {
 		width: 660px;
 	}
@@ -23,6 +23,10 @@
 			height: auto;
 			min-height: 400px;
 		}
+
+		li.pic {
+			/* TODO - fix these pics on mobile */
+		}
 	}
 
 	.main {
@@ -33,10 +37,21 @@
 				margin-bottom: 20px;
 			}
 		}
+		.contact-section {
+			.contact-me {
+				padding: 0;
+				margin-bottom: 20px;
+			}
+			.contact-form {
+				padding: 0;
+				padding-left: 20px;
+			}
+		}
 	}
 
 	.chart {
 		display: block;
+		margin-bottom: 20px;
 	}
 }
 /* Phone */
@@ -60,6 +75,24 @@
 		}
 		.icons i {
 			font-size: 2em;
+		}
+	}
+	.main {
+		h2.title {
+			line-height: 4em;
+			&:before {
+				top: 2em;
+			}
+		}
+		.contact-section {
+			.contact-me {
+				padding: 0;
+				margin-bottom: 20px;
+			}
+			.contact-form {
+				padding: 0;
+				margin: 0;
+			}
 		}
 	}
 }

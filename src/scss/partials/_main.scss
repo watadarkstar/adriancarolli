@@ -28,5 +28,52 @@
 			}
 		}
 	}
+
+	.contact-section {
+		.contact-me {
+			display: inline-block;
+			width: 50%;
+			min-width: 320px;
+			padding: 0 50px;
+
+			h3 {
+				line-height: normal;
+				margin: 0;
+			}
+			p {
+				margin: 0;
+			}
+		}
+		.contact-form {
+			margin: auto;
+			margin-bottom: 100px;
+			display: inline-block;
+			width: 50%;
+			min-width: 320px;
+			padding: 0 50px;
+
+			form {
+				width: 100%;
+			}
+			input, textarea {
+				display: block;
+				margin: auto;
+				margin-bottom: 10px;
+				border: 1px solid #ccc;
+				width: inherit;
+				padding: 5px 10px;
+			}
+
+			label {
+				font-size: 0.9em;
+			}
+
+			input[type="submit"] {
+				background: white;
+				width: 100px;
+				float: right;
+			}
+		}
+	}
 }
 
