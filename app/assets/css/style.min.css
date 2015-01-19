@@ -2137,6 +2137,7 @@ h2 {
 .gallery-btn .icon-search {
   font-size: 2.5em;
   background-color: #f7f7f7;
+  border: 2px solid #e1e1e1;
   height: 60px;
   width: 60px;
   position: absolute;
@@ -2146,9 +2147,13 @@ h2 {
   left: 0;
   right: 0;
   line-height: 0;
-  padding-top: 31px;
+  padding-top: 30px;
   padding-left: 4px;
   border-radius: 40px;
+  /* FF3.5+ */
+  /* Saf3.0+, Chrome */
+  box-shadow: 0px 0px 5px #000;
+  /* Opera 10.5, IE9, Chrome 10+ */
 }
 
 ul.stack {

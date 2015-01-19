@@ -26,6 +26,33 @@ $(function () {
     type: 'image'
   });
 
+  $('#p2-math').magnificPopup({
+    items: [
+      {src: 'assets/img/portfolio/math-work1.png'},
+      {src: 'assets/img/portfolio/math-work2.png'},
+      {src: 'assets/img/portfolio/math-work3.png'},
+      {src: 'assets/img/portfolio/math-work4.png'},
+      {src: 'assets/img/portfolio/math-work5.png'},
+      {src: 'assets/img/portfolio/math-work6.png'}
+    ],
+    gallery: {
+      enabled: true
+    },
+    type: 'image'
+  });
+
+  $('#p2-visibli').magnificPopup({
+    items: [
+      {src: 'assets/img/portfolio/visibli-work1.png'},
+      {src: 'assets/img/portfolio/visibli-work2.png'},
+      {src: 'assets/img/portfolio/visibli-work3.png'}
+    ],
+    gallery: {
+      enabled: true
+    },
+    type: 'image'
+  });
+
   $("#chev-header").click(function(e){
     $('html, body').animate({
         scrollTop: $("#section2").offset().top
