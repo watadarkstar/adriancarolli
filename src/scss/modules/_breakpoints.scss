@@ -1,7 +1,7 @@
 /* Tablet */
 @media only screen and (max-width:1170px) {
 	.wrapper {
-		width: 660px;
+		width: 1024px;
 	}
 	.header-container {
 		h1 {
@@ -14,6 +14,9 @@
 			&:before {
 				content: "Beautifully crafting web and mobile experiences";
 			}
+		}
+		.box {
+			max-width: 660px;
 		}
 	}
 	ul.blocks {
@@ -35,6 +38,11 @@
 				display: block;
 				margin: auto;
 				margin-bottom: 20px;
+			}
+			.row {
+				article {
+					display: block;
+				}
 			}
 		}
 		.contact-section {

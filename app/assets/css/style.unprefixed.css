@@ -1901,7 +1901,7 @@ h2 {
   margin-right: 20px;
   background-position: center;
   background-size: cover;
-  background-image: url(https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xfa1/t31.0-8/286421_10150364317550120_7692876_o.jpg);
+  background-image: url(../img/me.jpg);
   display: inline-block;
 }
 .main .bio .quote {
@@ -2130,7 +2130,7 @@ hr.style-two {
 /* Tablet */
 @media only screen and (max-width: 1170px) {
   .wrapper {
-    width: 660px;
+    width: 1024px;
   }
 
   .header-container h1 {
@@ -2142,6 +2142,9 @@ hr.style-two {
   }
   .header-container h2:before {
     content: "Beautifully crafting web and mobile experiences";
+  }
+  .header-container .box {
+    max-width: 660px;
   }
 
   ul.blocks li.block {
@@ -2158,6 +2161,9 @@ hr.style-two {
     display: block;
     margin: auto;
     margin-bottom: 20px;
+  }
+  .main .bio .row article {
+    display: block;
   }
   .main .contact-section .contact-me {
     padding: 0;
