@@ -1,5 +1,9 @@
 .main {
 	.skills {	
+		.row-chart {
+			margin-left: -54px;
+  			margin-right: -54px;
+		}
 	}
 	.bio {
 		font-weight: 400;
@@ -8,15 +12,18 @@
 		}
 		h3 {
 			line-height: 0;
+			margin: 0.8em 0;
 		}
 		.pic {
-			width: 260px;
-			height: 260px;
-			margin-right: 20px;
+			display: block;
+			width: 256px;
+			height: 256px;
+			@include rounded(128px);
+			margin: auto;
 			background-position: center;
 			background-size: cover;
 			background-image: url(../img/me.jpg);
-			display: inline-block;
+			display: block;
 		}
 		.quote {
 			padding-top: 5px;
