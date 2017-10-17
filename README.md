@@ -2,32 +2,21 @@
 
 Built using create-react-app and surge
 
+## Install
+
+Install dependencies:
+
+```
+yarn
+yarn global add surge
+```
+
 ## Deploying
 
-This guide explains most of the deployement: https://daveceddia.com/deploy-create-react-app-surge/ or follow these steps:
-
-Install surge:
+Run this command:
 
 ```
-npm install -g surge
+yarn run deploy
 ```
 
-Run the build:
-
-```
-npm run build
-```
-
-Switch into the build directory:
-
-```
-cd build
-```
-
-Run Surge, and follow the prompts. Email is adrian.carolli1@gmail.com
-
-```
-surge
-```
-
-Go to the url it prints out
+When it gets to surge the email is adrian.carolli1@gmail.com
