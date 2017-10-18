@@ -7,9 +7,6 @@ const Home = () => {
     <div>
       <Nav />
       <Header />
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     </div>
   );
 };

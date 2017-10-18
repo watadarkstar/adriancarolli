@@ -2,17 +2,18 @@ import React from 'react';
 import bgImg from '../../assets/me.jpg';
 import bgPatternImg from '../../assets/bgPattern.png';
 import Particles from 'react-particles-js';
+import injectSheet from 'react-jss';
 
-const Header = () => {
-  const { containerStyles, innerContainerStyles, boxStyles, h1Styles, h2Styles, bgInnerStyles } = styles;
+const Header = ({ classes }) => {
+  const { containerStyles, boxStyles, h1Styles, h2Styles, bgInnerStyles } = classes;
   
   return (
-    <div style={containerStyles}>
-      <div style={bgInnerStyles} />
-      <Particles style={innerContainerStyles} params={particlesParams} />
-      <div style={boxStyles}>
-          <h1 style={h1Styles}>I'm Adrian Carolli</h1>
-          <h2 style={h2Styles}>Beautifully crafting web and mobile experiences</h2>
+    <div className={containerStyles}>
+      <div className={bgInnerStyles} />
+      <Particles style={styles.particleStyles} params={particlesParams} />
+      <div className={boxStyles}>
+          <h1 className={h1Styles}>I'm Adrian Carolli</h1>
+          <h2 className={h2Styles}>Beautifully crafting web and mobile experiences</h2>
       </div>
     </div>
   )
@@ -147,7 +148,7 @@ const styles = {
     zIndex: 100
 
   },
-  innerContainerStyles: {
+  particleStyles: {
     position: 'absolute',
     height: '100%',
     width: '100%',
@@ -189,4 +190,4 @@ const styles = {
   }
 };
 
-export default Header;
+export default injectSheet(styles)(Header);
