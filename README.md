@@ -1,13 +1,13 @@
 # Portfolio
 
-Built using create-react-app and surge
+Built using React.js
 
 ## Install
 
 Install dependencies:
 
 ```
-yarn
+yarn install
 yarn global add surge
 ```
 
