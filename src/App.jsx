@@ -1,13 +1,13 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import Home from './components/home/Home';
+import HomePage from './components/home/HomePage';
 
 const App = () => (
   <div>
     <Helmet>
       <title>Adrian Carolli</title>
     </Helmet>
-    <Home />
+    <HomePage />
   </div>
 );
 

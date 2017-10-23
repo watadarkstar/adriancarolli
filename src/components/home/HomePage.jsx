@@ -4,14 +4,16 @@ import injectSheet from 'react-jss';
 import bgImg from '../../assets/me.jpg';
 import bgPatternImg from '../../assets/bgPattern.png';
 import particlesParams from './particlesParams';
+import Navbar from '../common/Navbar';
 
-const Header = ({ classes }) => {
+const HomePage = ({ classes }) => {
   const {
     containerStyles, boxStyles, h1Styles, h2Styles, bgInnerStyles,
   } = classes;
 
   return (
     <div className={containerStyles}>
+      <Navbar />
       <div className={bgInnerStyles} />
       <Particles style={styles.particleStyles} params={particlesParams} />
       <div className={boxStyles}>
@@ -50,7 +52,7 @@ const styles = {
     backgroundColor: '#1b1f29',
   },
   boxStyles: {
-    width: 960,
+    maxWidth: 960,
     color: 'white',
     position: 'absolute',
     top: '50%',
@@ -81,4 +83,4 @@ const styles = {
   },
 };
 
-export default injectSheet(styles)(Header);
+export default injectSheet(styles)(HomePage);

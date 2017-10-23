@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Nav = () => {
+const Navbar = () => {
   const { navBarStyles } = styles;
 
   return (
@@ -19,8 +19,12 @@ const Nav = () => {
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item active">
-            { /* <a className="nav-link" href="#">
-            Home <span className="sr-only">(current)</span></a> */ }
+            <a className="nav-link" href="/">
+              Home <span className="sr-only">(current)</span>
+            </a>
+            <a className="nav-item" href="/portfolio">
+              Portfolio
+            </a>
           </li>
         </ul>
       </div>
@@ -34,4 +38,4 @@ const styles = {
   },
 };
 
-export default Nav;
+export default Navbar;
