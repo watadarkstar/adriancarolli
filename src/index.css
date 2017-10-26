@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800');
 
-body {
+body, h1, h2, h3, h4, p {
 	font: 14px/26px 'Open Sans',sans-serif;
+	margin: 0;
+}
+
+#root {
+	display: block;
+	height: 100%;
 }

@@ -1,10 +1,10 @@
 export default {
   particles: {
     number: {
-      value: 50,
+      value: 60,
       density: {
-        enable: false,
-        value_area: 800,
+        enable: true,
+        value_area: 1000,
       },
     },
     color: {
@@ -26,7 +26,7 @@ export default {
       },
     },
     opacity: {
-      value: 0.5,
+      value: 0.3,
       random: false,
       anim: {
         enable: false,
@@ -49,7 +49,7 @@ export default {
       enable: true,
       distance: 300,
       color: '#ffffff',
-      opacity: 0.2,
+      opacity: 0.1,
       width: 1,
     },
     move: {

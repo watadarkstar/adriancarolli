@@ -1,13 +1,13 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import HomePage from './components/home/HomePage';
+import Home from './components/views/Home';
 
 const App = () => (
-  <div>
+  <div style={{ height: '100%' }}>
     <Helmet>
       <title>Adrian Carolli</title>
     </Helmet>
-    <HomePage />
+    <Home />
   </div>
 );
 
