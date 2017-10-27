@@ -6,4 +6,5 @@ import { Container } from 'semantic-ui-react';
 export const StyledContainer = styled(Container)``;
 export const StyledOuterContainer = styled.div`
   background-color: white;
+  text-align: center;
 `;
