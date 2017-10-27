@@ -15,7 +15,7 @@ export const StyledH1 = styled.h1`
   margin: auto;
 `;
 
-export const StyledH2 = styled.h2`
+export const StyledParagraph = styled.p`
   margin: auto;
   max-width: 700px;
   font-weight: 300;

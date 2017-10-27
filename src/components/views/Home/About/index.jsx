@@ -1,5 +1,5 @@
 import React from 'react';
-import { SectionContainer, StyledH1, StyledH2, StyledHeader } from '../../../common';
+import { SectionContainer, StyledH1, StyledParagraph, StyledHeader } from '../../../common';
 import { StyledBrandImage, StyledBrands } from './styles';
 
 const About = () => (
@@ -8,11 +8,11 @@ const About = () => (
       <StyledH1>
         About Me
       </StyledH1>
-      <StyledH2>
+      <StyledParagraph>
         I am an experienced and well known Software Engineer with a focus
         on Front-End Enginnering. For more than 5 years I have worked with
         leading brands and startups in the Toronto and Waterloo region.
-      </StyledH2>
+      </StyledParagraph>
     </StyledHeader>
     <StyledBrands>
       <StyledBrandImage height="70" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Cineplex_logo.svg/1200px-Cineplex_logo.svg.png" />
