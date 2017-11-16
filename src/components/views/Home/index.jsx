@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Visibility } from 'semantic-ui-react';
 import Splash from './Splash';
 import About from './About';
+import Contact from './Contact';
+import Skills from './Skills';
 import FixedMenu from '../../common/FixedMenu';
 
 class Home extends Component {
@@ -29,6 +31,12 @@ class Home extends Component {
         </Visibility>
         <Visibility>
           <About />
+        </Visibility>
+        <Visibility>
+          <Skills />
+        </Visibility>
+        <Visibility>
+          <Contact />
         </Visibility>
       </div>
     );

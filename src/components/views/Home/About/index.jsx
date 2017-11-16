@@ -9,9 +9,9 @@ const About = () => (
         About Me
       </StyledH1>
       <StyledParagraph>
-        I am an experienced and well known Software Engineer with a focus
-        on Front-End Enginnering. For more than 5 years I have worked with
-        leading brands and startups in the Toronto and Waterloo region.
+        I am an experienced and well known Software Engineer with a focus on Front-End Engineering.
+        For more than 5 years I have worked with leading brands and startups in
+        the Toronto and Waterloo region.
       </StyledParagraph>
     </StyledHeader>
     <StyledBrands>
@@ -23,6 +23,7 @@ const About = () => (
       <StyledBrandImage height="70" src="https://biz.prlog.org/LiberateHealth/logo.jpg" />
       <StyledBrandImage height="70" src="https://cdn.worldvectorlogo.com/logos/kik.svg" />
       <StyledBrandImage height="70" src="https://d1qb2nb5cznatu.cloudfront.net/startups/i/293555-b0c86e558d04eab0590d4e6254dcc2ef-medium_jpg.jpg?buster=1384280480" />
+      <StyledBrandImage height="70" src="http://keyhole.co/blog/wp-content/uploads/2016/08/transparent-background-logo.png" />
     </StyledBrands>
   </SectionContainer>
 );
