@@ -8,5 +8,4 @@ export const StyledBrandImage = styled.img`
 `;
 
 export const StyledBrands = styled.div`
-  padding-bottom: 100px;
 `;
