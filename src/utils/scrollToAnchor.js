@@ -12,7 +12,8 @@ const scrollToAnchor = (hash, lastOffsetY) => {
   // no scroll to target, stop
   if (!anchor) return;
 
-  const elementTop = Math.round(anchor.getBoundingClientRect().top);
+  const navOffset = 5;
+  const elementTop = Math.round(anchor.getBoundingClientRect().top + navOffset);
   const scrollStep = Math.ceil((Math.abs(elementTop / 8))) * mathSign(elementTop);
 
   // if our last step was not applied, stop
