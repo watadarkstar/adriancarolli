@@ -17,7 +17,7 @@ const handleClick = ({ name }) => {
 };
 
 const FixedMenu = ({ activeItem }) => (
-  <Menu fixed="top" size="large" style={{ zIndex: 200 }}>
+  <Menu fixed="top" size="large" style={{ zIndex: 200 }} inverted>
     <Container>
       {items.map(item => (
         <Menu.Item
