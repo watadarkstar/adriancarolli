@@ -17,7 +17,7 @@ export const StyledH1 = styled.h1`
 
 export const StyledParagraph = styled.p`
   margin: auto;
-  max-width: 700px;
+  max-width: 750px;
   font-weight: 300;
   font-size: 1.3em;
   text-align: center;
