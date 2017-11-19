@@ -20,8 +20,9 @@ class Home extends Component {
 
     return (
       <div style={{ height: '100%' }}>
-        { visible ? <FixedMenu /> : null }
+        { visible ? <FixedMenu activeItem="Home" /> : null }
         <Visibility
+          id="Home"
           onBottomPassed={() => this.showFixedMenu()}
           onBottomVisible={() => this.hideFixedMenu()}
           once={false}
@@ -29,13 +30,13 @@ class Home extends Component {
         >
           <Splash />
         </Visibility>
-        <Visibility>
+        <Visibility id="About">
           <About />
         </Visibility>
-        <Visibility>
+        <Visibility id="Skills">
           <Skills />
         </Visibility>
-        <Visibility>
+        <Visibility id="Contact">
           <Contact />
         </Visibility>
       </div>

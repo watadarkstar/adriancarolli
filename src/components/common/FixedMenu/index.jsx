@@ -1,14 +1,33 @@
 import React from 'react';
 import { Menu, Container } from 'semantic-ui-react';
+import scrollToAnchor from '../../../utils/scrollToAnchor';
 
-const FixedMenu = () => (
+const items = [
+  { name: 'Home' },
+  { name: 'About' },
+  { name: 'Skills' },
+  { name: 'Portfolio' },
+  { name: 'Contact' },
+];
+
+const handleClick = ({ name }) => {
+  const hash = `#${name}`;
+  if (window.history) window.history.pushState(null, null, hash);
+  scrollToAnchor(hash);
+};
+
+const FixedMenu = ({ activeItem }) => (
   <Menu fixed="top" size="large" style={{ zIndex: 200 }}>
     <Container>
-      <Menu.Item as="a" active>Home</Menu.Item>
-      <Menu.Item as="a">About</Menu.Item>
-      <Menu.Item as="a">Skills</Menu.Item>
-      <Menu.Item as="a">Portfolio</Menu.Item>
-      <Menu.Item as="a">Contact</Menu.Item>
+      {items.map(item => (
+        <Menu.Item
+          active={activeItem === item.name}
+          onClick={() => handleClick(item)}
+          key={item.name}
+        >
+          {item.name}
+        </Menu.Item>
+      ))}
     </Container>
   </Menu>
 );
