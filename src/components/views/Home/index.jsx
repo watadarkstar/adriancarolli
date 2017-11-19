@@ -10,7 +10,7 @@ import FixedMenu from '../../common/FixedMenu';
 class Home extends Component {
   constructor(props) {
     super(props);
-    this.state = { visible: false, activeItem: "Home" };
+    this.state = { visible: false, activeItem: 'Home' };
   }
 
   showFixedMenu() { this.setState({ visible: true }); }
