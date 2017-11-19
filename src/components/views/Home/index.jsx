@@ -4,6 +4,7 @@ import Splash from './Splash';
 import About from './About';
 import Contact from './Contact';
 import Skills from './Skills';
+import Portfolio from './Portfolio';
 import FixedMenu from '../../common/FixedMenu';
 
 class Home extends Component {
@@ -35,6 +36,9 @@ class Home extends Component {
         </Visibility>
         <Visibility id="Skills">
           <Skills />
+        </Visibility>
+        <Visibility id="Portfolio">
+          <Portfolio />
         </Visibility>
         <Visibility id="Contact">
           <Contact />
