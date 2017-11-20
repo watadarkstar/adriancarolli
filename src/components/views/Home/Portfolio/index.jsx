@@ -1,9 +1,11 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import _ from 'lodash';
 import React from 'react';
 import { Grid } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 import { SectionContainer, StyledH1, StyledParagraph, StyledHeader } from '../../../common';
 import { StyledImage, StyledColumn, StyledCaption, StyledH2, StyledP, StyledPContainer } from './styles';
-import data from './data';
+import data from '../../../../store/portfolio/data';
 
 const Portfolio = () => (
   <div>
@@ -22,13 +24,15 @@ const Portfolio = () => (
     <Grid columns={2} stackable>
       {_.map(data, item => (
         <StyledColumn>
-          <StyledImage src={item.image1} alt={item.name} />
-          <StyledCaption>
-            <StyledH2>{item.name}</StyledH2>
-            {item.caption.map(text => (
-              <StyledPContainer><StyledP>{text}</StyledP></StyledPContainer>
-            ))}
-          </StyledCaption>
+          <Link to={item.link}>
+            <StyledImage src={item.image1} alt={item.name} />
+            <StyledCaption>
+              <StyledH2>{item.name}</StyledH2>
+              {item.caption.map(text => (
+                <StyledPContainer><StyledP>{text}</StyledP></StyledPContainer>
+              ))}
+            </StyledCaption>
+          </Link>
         </StyledColumn>
       ))}
     </Grid>
