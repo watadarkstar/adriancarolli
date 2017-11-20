@@ -10,8 +10,8 @@ const Contact = () => (
         Contact Me
       </StyledH1>
       <StyledParagraph>
-          Have an awesome oppurtunity or project for me? Or simply wish to say
-          hello, feel free to get in touch.
+          Do you want to change the world like I do? Have an awesome oppurtunity or project for me?
+          Or simply wish to say hello, feel free to get in touch.
       </StyledParagraph>
     </StyledHeader>
     <StyledForm action="//formspree.io/adrian.carolli1@gmail.com" method="POST">
