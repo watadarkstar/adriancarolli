@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid } from 'semantic-ui-react';
 import { IoSocialJavascript, IoSocialHtml5, IoSocialCss3, IoSocialNodejs,
-  IoSocialHackernews, IoSocialApple, IoSocialAndroid } from 'react-icons/lib/io';
+  IoSocialHackernews, IoSocialApple } from 'react-icons/lib/io';
 import { SectionContainer, StyledH1, StyledParagraph, StyledHeader } from '../../../common';
 import reactIcon from '../../../../assets/reactIcon.svg';
 import { StyledH2, StyledReactImg } from './styles';
@@ -24,10 +24,6 @@ const Skills = () => (
         <StyledH2>React</StyledH2>
       </Grid.Column>
       <Grid.Column>
-        <IoSocialAndroid size="70" />
-        <StyledH2>React Native</StyledH2>
-      </Grid.Column>
-      <Grid.Column>
         <IoSocialJavascript size="70" />
         <StyledH2>JavaScript (ES6)</StyledH2>
       </Grid.Column>
@@ -42,6 +38,10 @@ const Skills = () => (
       <Grid.Column>
         <IoSocialNodejs size="70" />
         <StyledH2>Node.js</StyledH2>
+      </Grid.Column>
+      <Grid.Column>
+        <StyledReactImg src={reactIcon} alt="react icon" />
+        <StyledH2>React Native</StyledH2>
       </Grid.Column>
       <Grid.Column>
         <IoSocialHackernews size="70" />
