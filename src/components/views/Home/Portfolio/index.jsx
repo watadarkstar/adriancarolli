@@ -2,7 +2,7 @@ import _ from 'lodash';
 import React from 'react';
 import { Grid } from 'semantic-ui-react';
 import { SectionContainer, StyledH1, StyledParagraph, StyledHeader } from '../../../common';
-import { StyledImage, StyledColumn, StyledCaption, StyledH2, StyledP } from './styles';
+import { StyledImage, StyledColumn, StyledCaption, StyledH2, StyledP, StyledPContainer } from './styles';
 import data from './data';
 
 const Portfolio = () => (
@@ -26,7 +26,7 @@ const Portfolio = () => (
           <StyledCaption>
             <StyledH2>{item.name}</StyledH2>
             {item.caption.map(text => (
-              <StyledP>{text}</StyledP>
+              <StyledPContainer><StyledP>{text}</StyledP></StyledPContainer>
             ))}
           </StyledCaption>
         </StyledColumn>

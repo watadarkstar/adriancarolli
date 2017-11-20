@@ -5,7 +5,7 @@ import { Grid } from 'semantic-ui-react';
 export const StyledColumn = styled(Grid.Column)`
   background: #2f3238;
   overflow: hidden;
-  div {
+  span {
     opacity: 0.6;
   }
   
@@ -14,7 +14,7 @@ export const StyledColumn = styled(Grid.Column)`
   }
   
   &:hover {
-    div {
+    span {
       opacity: 0.3;
       -webkit-transform: scale3d(1.1,1.1,1);
       transform: scale3d(1.1,1.1,1);
@@ -27,7 +27,8 @@ export const StyledColumn = styled(Grid.Column)`
   }
 `;
 
-export const StyledImage = styled.div`
+export const StyledImage = styled.span`
+  display: block;
   position: relative;
   -webkit-transition: opacity 1s, -webkit-transform 1s;
   transition: opacity 1s, transform 1s;
@@ -68,9 +69,12 @@ export const StyledH2 = styled.h2`
   }
 `;
 
+export const StyledPContainer = styled.div`
+  margin: 4px;
+`;
+
 export const StyledP = styled.p`
   display: inline-block;
-  margin: 3px;
   padding: 0.4em 1em;
   background: rgba(255,255,255,0.9);
   color: #2f3238;
