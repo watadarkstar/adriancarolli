@@ -10,8 +10,8 @@ const Contact = () => (
         Contact Me
       </StyledH1>
       <StyledParagraph>
-          Do you want to change the world like I do? Have an awesome oppurtunity or project for me?
-          Or simply wish to say hello, feel free to get in touch.
+          Do you want to change the world like I do? Do you have an awesome oppurtunity or project
+          for me? Feel free to get in touch.
       </StyledParagraph>
     </StyledHeader>
     <StyledForm action="//formspree.io/adrian.carolli1@gmail.com" method="POST">
@@ -34,7 +34,7 @@ const Contact = () => (
         control="textarea"
         name="message"
         type="text"
-        placeholder="E.g. Hello it's me I was wondering..."
+        placeholder="E.g. Hello it's me, and I was wondering..."
       />
       <Button secondary>Send</Button>
     </StyledForm>

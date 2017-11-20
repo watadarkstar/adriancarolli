@@ -13,8 +13,8 @@ const Skills = () => (
         Skills
       </StyledH1>
       <StyledParagraph>
-        With 7+ years as a Software Engineer I keep updated with the latest technologies
-        so I can build faster, more reliable and forward-thinking applications for
+        I have 7+ years of experience as a Software Engineer. I keep updated with the latest
+        technologies so I can build faster, more reliable and forward-thinking applications for
         companies like yours.
       </StyledParagraph>
     </StyledHeader>
