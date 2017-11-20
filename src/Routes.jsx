@@ -9,7 +9,7 @@ import data from './store/portfolio/data';
 const Router = () => (
   <div style={{ height: '100%' }}>
     <BrowserRouter>
-      <div>
+      <div style={{ height: '100%' }}>
         <Route path="/" component={ScrollToTop} />
         <Switch>
           <Route exact path="/" render={() => <Home />} />
