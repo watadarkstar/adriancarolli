@@ -23,7 +23,7 @@ export default {
   sparkgig: {
     image1: sparkgigimage1,
     name: 'SparkGig',
-    caption: ['How do we make live enterntainment accessible?',
+    caption: ['How do we make live entertainment accessible?',
       'Connect event hosts and performers.',
       'With a focus on the marketplace experience.',
     ],
