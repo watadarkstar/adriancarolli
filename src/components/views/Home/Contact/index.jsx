@@ -2,7 +2,6 @@ import React from 'react';
 import { Button } from 'semantic-ui-react';
 import { SectionContainer, StyledH1, StyledParagraph, StyledHeader } from '../../../common';
 import { StyledForm, StyledInput } from './styles';
-import resume from '../../../../assets/resume.pdf';
 
 const Contact = () => (
   <SectionContainer>
@@ -12,7 +11,7 @@ const Contact = () => (
       </StyledH1>
       <StyledParagraph>
           Do you want to change the world like I do? Do you have an awesome oppurtunity or project
-          for me? Feel free to get in touch.  Also, check out my <a href={resume}>resume</a>.
+          for me? Feel free to get in touch.
       </StyledParagraph>
     </StyledHeader>
     <StyledForm action="//formspree.io/adrian.carolli1@gmail.com" method="POST">
