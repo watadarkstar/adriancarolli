@@ -23,13 +23,13 @@ const Portfolio = () => (
     </SectionContainer>
     <Grid columns={2} stackable>
       {_.map(data, item => (
-        <StyledColumn>
+        <StyledColumn key={item.name}>
           <Link to={item.link}>
             <StyledImage src={item.image1} alt={item.name} />
             <StyledCaption>
               <StyledH2>{item.name}</StyledH2>
               {item.caption.map(text => (
-                <StyledPContainer><StyledP>{text}</StyledP></StyledPContainer>
+                <StyledPContainer key={text}><StyledP>{text}</StyledP></StyledPContainer>
               ))}
             </StyledCaption>
           </Link>

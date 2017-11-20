@@ -40,7 +40,7 @@ export const StyledImage = styled.span`
   background-position: center;
 `;
 
-export const StyledCaption = styled.caption`
+export const StyledCaption = styled.div`
   position: absolute;
   top: 0;
   left: 0;
