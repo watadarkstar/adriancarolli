@@ -6,6 +6,7 @@
     "lodash": "^4.17.4",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-ga": "^2.3.5",
     "react-helmet": "^5.2.0",
     "react-icons": "^2.2.7",
     "react-particles-js": "^2.0.0",
