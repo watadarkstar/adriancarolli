@@ -26,6 +26,7 @@ export const StyledDescription = styled.div`
   line-height: 2em;
   text-align: left;
   padding-bottom: 100px;
+  white-space: pre-line;
 `;
 
 export const StyledButton = styled(Button)`
