@@ -10,7 +10,7 @@ const About = () => (
       </StyledH1>
       <StyledParagraph>
         I am an experienced and well known Software Engineer with a focus on Front-End Engineering.
-        For more than 7 years I have worked with leading brands and startups in
+        For more than 7 years I have worked with brands and startups in
         the Toronto and Kitchener-Waterloo Region.
       </StyledParagraph>
     </StyledHeader>
