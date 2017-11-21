@@ -6,7 +6,7 @@ export const StyledColumn = styled(Grid.Column)`
   background: #2f3238;
   overflow: hidden;
   span {
-    opacity: 0.6;
+    opacity: 0.3;
   }
   
   &&&&&&& {
@@ -15,7 +15,7 @@ export const StyledColumn = styled(Grid.Column)`
   
   &:hover {
     span {
-      opacity: 0.3;
+      opacity: 0.6;
       -webkit-transform: scale3d(1.1,1.1,1);
       transform: scale3d(1.1,1.1,1);
     }
