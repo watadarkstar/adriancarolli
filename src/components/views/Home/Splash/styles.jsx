@@ -1,6 +1,7 @@
 /* eslint-disable import/prefer-default-export */
 
 import styled from 'styled-components';
+import { IoChevronDown } from 'react-icons/lib/io';
 import bgImg from '../../../../assets/me.jpg';
 
 export const StyledSegment = styled.div`
@@ -79,4 +80,12 @@ export const StyledBg = styled.div`
   background-size: cover;
   background-position: center;
   z-index: 100;
+`;
+
+export const StyledChevronDown = styled(IoChevronDown)`
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -15px;
+  z-index: 200;
 `;

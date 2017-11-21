@@ -2,7 +2,7 @@ import React from 'react';
 import Particles from 'react-particles-js';
 
 import {
-  StyledContainer, StyledTitle, StyledSubtitle, StyledSegment, StyledBg,
+  StyledContainer, StyledTitle, StyledSubtitle, StyledSegment, StyledBg, StyledChevronDown,
 } from './styles';
 import particlesParams from './particlesParams';
 import bgPatternImg from '../../../../assets/bgPattern.png';
@@ -15,6 +15,7 @@ const Splash = () => (
       <StyledTitle>{'I\'m Adrian Carolli'}</StyledTitle>
       <StyledSubtitle />
     </StyledContainer>
+    <StyledChevronDown size="30" color="white" />
   </StyledSegment>
 );
 
