@@ -1,6 +1,16 @@
 import React from 'react';
 import { SectionContainer, StyledH1, StyledParagraph, StyledHeader } from '../../../common';
 import { StyledBrandImage, StyledBrands } from './styles';
+import kikImg from '../../../../assets/about/kik.svg';
+import cineplexImg from '../../../../assets/about/cineplex.png';
+import mecImg from '../../../../assets/about/mec.gif';
+import waveImg from '../../../../assets/about/wave.jpeg';
+import pentaImg from '../../../../assets/about/penta.png';
+import liberateImg from '../../../../assets/about/liberate.jpg';
+import keyholeImg from '../../../../assets/about/keyhole.png';
+import xtremeImg from '../../../../assets/about/xtreme.png';
+import sparkgigImg from '../../../../assets/about/sparkgig.png';
+import pivotalImg from '../../../../assets/about/pivotal.png';
 
 const About = () => (
   <SectionContainer>
@@ -15,15 +25,16 @@ const About = () => (
       </StyledParagraph>
     </StyledHeader>
     <StyledBrands>
-      <StyledBrandImage height="70" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Cineplex_logo.svg/1200px-Cineplex_logo.svg.png" />
-      <StyledBrandImage height="70" src="http://ires.ubc.ca/files/2014/11/Mountain-Equipment-Co-Op.gif" />
-      <StyledBrandImage height="70" src="https://www.chequesnow.ca/wp-content/uploads/2013/06/WaveAccounting_logo1.jpeg" />
-      <StyledBrandImage height="70" src="http://pentamedical.ca/images/logo.png" />
-      <StyledBrandImage height="70" src="https://berrystorm.files.wordpress.com/2009/08/logo.png?w=450" />
-      <StyledBrandImage height="70" src="https://biz.prlog.org/LiberateHealth/logo.jpg" />
-      <StyledBrandImage height="70" src="https://cdn.worldvectorlogo.com/logos/kik.svg" />
-      <StyledBrandImage height="70" src="https://d1qb2nb5cznatu.cloudfront.net/startups/i/293555-b0c86e558d04eab0590d4e6254dcc2ef-medium_jpg.jpg?buster=1384280480" />
-      <StyledBrandImage height="70" src="http://keyhole.co/blog/wp-content/uploads/2016/08/transparent-background-logo.png" />
+      <StyledBrandImage height="70" src={cineplexImg} />
+      <StyledBrandImage height="70" src={mecImg} />
+      <StyledBrandImage height="70" src={waveImg} />
+      <StyledBrandImage height="70" src={pentaImg} />
+      <StyledBrandImage height="70" src={xtremeImg} />
+      <StyledBrandImage height="70" src={pivotalImg} />
+      <StyledBrandImage height="70" src={liberateImg} />
+      <StyledBrandImage height="70" src={kikImg} />
+      <StyledBrandImage height="70" src={sparkgigImg} />
+      <StyledBrandImage height="70" src={keyholeImg} />
     </StyledBrands>
   </SectionContainer>
 );
