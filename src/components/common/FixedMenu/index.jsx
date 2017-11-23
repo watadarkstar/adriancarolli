@@ -11,16 +11,17 @@ const items = [
   { name: 'Contact' },
 ];
 
-const handleClick = ({ name }) => {
-  const hash = `#${name}`;
-  if (window.history) window.history.pushState(null, null, hash);
-  scrollToAnchor(hash);
-};
-
 class FixedMenu extends Component {
   constructor(props) {
     super(props);
     this.state = { mobileVisible: false };
+  }
+
+  handleClick({ name }) {
+    const hash = `#${name}`;
+    this.setState({ mobileVisible: false });
+    if (window.history) window.history.pushState(null, null, hash);
+    scrollToAnchor(hash);
   }
 
   renderMenuItems() {
@@ -31,7 +32,7 @@ class FixedMenu extends Component {
         {items.map(item => (
           <Menu.Item
             active={activeItem === item.name}
-            onClick={() => handleClick(item)}
+            onClick={() => this.handleClick(item)}
             key={item.name}
           >
             {item.name}
