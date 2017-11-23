@@ -18,7 +18,7 @@ export default {
     roles: ['Lead Software Engineer', 'React Native', 'Product Management', 'User Experience Design'],
     caption: ['How do we provide better health care?',
       'Through a modality that is convenient',
-      'With a focus on mobility.',
+      'with a focus on mobility.',
     ],
   },
   wave: {
@@ -34,7 +34,7 @@ My role in the project was as an Agile Engineer, I worked on the iOS app at Xtre
     roles: ['Agile Engineer', 'iOS'],
     caption: ['How do we make accounting easier?',
       'We allow people to take pictures of their receipts',
-      'With a focus on their mobile experience.',
+      'with a focus on their mobile experience.',
     ],
   },
   sparkgig: {
@@ -47,7 +47,7 @@ My role in the project was as an Agile Engineer, I worked on the iOS app at Xtre
     roles: ['CTO', 'Software Engineer', 'React + Angular', 'Management', 'User Experience Design'],
     caption: ['How do we make live entertainment accessible?',
       'We connect event hosts and performers',
-      'Through an accessible marketplace.',
+      'through an accessible marketplace.',
     ],
   },
   kik: {
@@ -63,7 +63,7 @@ My role in the project was as an Agile Engineer, I worked on the iOS app at Xtre
     roles: ['Bot Developer', 'Python + Angular', 'Software Engineer'],
     caption: ['How do we easiliy configure chat bots?',
       'We allow users to configure chat engines',
-      'And focus on the different use cases.',
+      'and focus on the different use cases.',
     ],
   },
 };
