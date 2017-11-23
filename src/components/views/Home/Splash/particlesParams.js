@@ -1,7 +1,7 @@
 export default {
   particles: {
     number: {
-      value: 40,
+      value: 60,
       density: {
         enable: true,
         value_area: 1000,
@@ -78,7 +78,11 @@ export default {
         enable: true,
         mode: 'push',
       },
-      resize: true,
+      onresize: {
+        enable: true,
+        density_auto: true,
+        density_area: 400,
+      },
     },
     modes: {
       grab: {
