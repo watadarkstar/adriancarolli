@@ -20,14 +20,14 @@ const Contact = () => (
         control="input"
         name="name"
         type="text"
-        placeholder="E.g. John Doe"
+        placeholder="John Doe"
       />
       <StyledInput
         label="Your Email"
         control="input"
         name="_replyto"
         type="email"
-        placeholder="E.g. yourname@company.com"
+        placeholder="yourname@company.com"
         required
       />
       <StyledInput
@@ -35,7 +35,7 @@ const Contact = () => (
         control="textarea"
         name="message"
         type="text"
-        placeholder="E.g. Hello it's me, and I was wondering..."
+        placeholder="Hello it's me, and I was wondering..."
         required
       />
       <Button secondary>Send</Button>
