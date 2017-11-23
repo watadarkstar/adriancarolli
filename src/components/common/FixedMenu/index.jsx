@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Menu, Container } from 'semantic-ui-react';
-import scrollToAnchor from '../../../utils/scrollToAnchor';
+import { scroller } from 'react-scroll';
 import { StyledDesktopMenu, StyledMobileMenu, StyledIoNavicon, StyledIoClose } from './styles';
 
 const items = [
@@ -21,7 +21,12 @@ class FixedMenu extends Component {
     const hash = `#${name}`;
     this.setState({ mobileVisible: false });
     if (window.history) window.history.pushState(null, null, hash);
-    scrollToAnchor(hash);
+    scroller.scrollTo(name, {
+      duration: 500,
+      delay: 100,
+      smooth: true,
+      offset: 5,
+    });
   }
 
   renderMenuItems() {
