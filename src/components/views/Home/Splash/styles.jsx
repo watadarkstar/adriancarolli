@@ -88,4 +88,8 @@ export const StyledChevronDown = styled(IoChevronDown)`
   left: 50%;
   margin-left: -15px;
   z-index: 200;
+  
+  &:hover {
+    cursor: pointer;
+  }
 `;

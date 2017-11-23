@@ -1,11 +1,21 @@
 import React from 'react';
 import Particles from 'react-particles-js';
+import { scroller } from 'react-scroll';
 
 import {
   StyledContainer, StyledTitle, StyledSubtitle, StyledSegment, StyledBg, StyledChevronDown,
 } from './styles';
 import particlesParams from './particlesParams';
 import bgPatternImg from '../../../../assets/bgPattern.png';
+
+const handleClick = () => {
+  scroller.scrollTo('About', {
+    duration: 500,
+    delay: 100,
+    smooth: true,
+    offset: 5,
+  });
+};
 
 const Splash = () => (
   <StyledSegment>
@@ -15,7 +25,7 @@ const Splash = () => (
       <StyledTitle>{'I\'m Adrian Carolli'}</StyledTitle>
       <StyledSubtitle />
     </StyledContainer>
-    <StyledChevronDown size="30" color="white" />
+    <StyledChevronDown size="30" color="white" onClick={() => handleClick()} />
   </StyledSegment>
 );
 
