@@ -26,8 +26,9 @@ const Contact = () => (
         label="Your Email"
         control="input"
         name="_replyto"
-        type="text"
+        type="email"
         placeholder="E.g. yourname@company.com"
+        required
       />
       <StyledInput
         label="Your Message"
@@ -35,6 +36,7 @@ const Contact = () => (
         name="message"
         type="text"
         placeholder="E.g. Hello it's me, and I was wondering..."
+        required
       />
       <Button secondary>Send</Button>
     </StyledForm>
