@@ -10,7 +10,7 @@ const Contact = () => (
         Contact Me
       </StyledH1>
       <StyledParagraph>
-          Do you want to change the world like I do? Do you have an awesome oppurtunity or project
+          Do you want to change the world like I do? Do you have an awesome opportunity or project
           for me? Feel free to get in touch.
       </StyledParagraph>
     </StyledHeader>
