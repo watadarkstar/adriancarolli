@@ -8,6 +8,7 @@ const items = [
   { name: 'About' },
   { name: 'Skills' },
   { name: 'Portfolio' },
+  { name: 'Github' },
   { name: 'Contact' },
 ];
 
@@ -18,7 +19,7 @@ class FixedMenu extends Component {
   }
 
   handleClick({ name }) {
-    const hash = `#${name}`;
+    const hash = `#${name.replace(/ /g, '')}`;
     this.setState({ mobileVisible: false });
     if (window.history) window.history.pushState(null, null, hash);
     scroller.scrollTo(name, {

@@ -5,6 +5,7 @@ import About from './About';
 import Contact from './Contact';
 import Skills from './Skills';
 import Portfolio from './Portfolio';
+import OpenSource from './OpenSource';
 import FixedMenu from '../../common/FixedMenu';
 
 class Home extends Component {
@@ -57,8 +58,16 @@ class Home extends Component {
           <Portfolio />
         </Visibility>
         <Visibility
-          id="Contact"
+          id="Github"
           onTopPassedReverse={() => this.setState({ activeItem: 'Portfolio' })}
+          onTopPassed={() => this.setState({ activeItem: 'Github' })}
+          once={false}
+        >
+          <OpenSource />
+        </Visibility>
+        <Visibility
+          id="Contact"
+          onTopPassedReverse={() => this.setState({ activeItem: 'Github' })}
           onTopPassed={() => this.setState({ activeItem: 'Contact' })}
           once={false}
         >
