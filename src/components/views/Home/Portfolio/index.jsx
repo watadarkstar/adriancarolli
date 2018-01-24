@@ -15,7 +15,7 @@ const Portfolio = () => (
           Portfolio
         </StyledH1>
         <StyledParagraph>
-          I have helped transform the future of accounting, chat, health care, entertainment and
+          I helped transform the future of accounting, chat, health care, entertainment and
           many more industries. Because the people who are crazy enough to think they can change the
           world – are the ones who do.
         </StyledParagraph>
