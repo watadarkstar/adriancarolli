@@ -16,14 +16,14 @@ const Contact = () => (
     </StyledHeader>
     <StyledForm action="//formspree.io/adrian.carolli1@gmail.com" method="POST">
       <StyledInput
-        label="Your Name"
+        label="Name"
         control="input"
         name="name"
         type="text"
         placeholder="John Doe"
       />
       <StyledInput
-        label="Your Email"
+        label="Email"
         control="input"
         name="_replyto"
         type="email"
@@ -31,7 +31,7 @@ const Contact = () => (
         required
       />
       <StyledInput
-        label="Your Message"
+        label="Message"
         control="textarea"
         name="message"
         type="text"
